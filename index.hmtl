@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index Calculator</title>
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Side: Heading & Info -->
+        <div class="left-section">
+            <div class="logo">
+                <!-- Agar logo image folder me hai -->
+                <img src="images/logo.svg" alt="Logo">
+            </div>
+            <h1>Body Mass Index Calculator</h1>
+            <p>Better understand your weight in relation to your height using our body mass index (BMI) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
+        </div>
+
+        <!-- Right Side: Calculator Card -->
+        <div class="right-section">
+            <div class="card">
+                <h2>Enter your details below</h2>
+                
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="unit" checked> Metric
+                    </label>
+                    <label>
+                        <input type="radio" name="unit"> Imperial
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-field">
+                        <label>Height</label>
+                        <input type="number" value="0">
+                        <span>cm</span>
+                    </div>
+                    <div class="input-field">
+                        <label>Weight</label>
+                        <input type="number" value="0">
+                        <span>kg</span>
+                    </div>
+                </div>
+
+                <div class="result-box">
+                    <h3>Welcome!</h3>
+                    <p>Enter your height and weight and you'll see your BMI result here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript file link -->
+    <script src="calculator.js"></script>
+</body>
+</html>
